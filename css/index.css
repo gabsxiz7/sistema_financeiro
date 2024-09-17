@@ -9,8 +9,14 @@ form>{
     color: rgb(80, 0, 44);
 
 }
+#h1_cad_user{
+    color: azure;
+    margin-bottom: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
 body{
-    background-color: #ff5faf;
+    background-color: rgb(97, 17, 172);
 }
 
 .form-label{
@@ -21,4 +27,17 @@ body{
 
 .btn{
     width: 40%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom-color: rgb(228, 233, 233);
+    color: aliceblue;
+}
+button{
+    text-align:center;
+    margin-top: 10px;
+    color: blue;
+}
+
+.img_cad{
+    margin-top: 220px;
+width: 20px;
 }
