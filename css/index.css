@@ -1,43 +1,31 @@
-form>{
+form{  
     margin-top: 20%;
-
+    text-align:left;
 }
+
 
 .fa-solid{
-
-    font-size: 150px;
-    color: rgb(80, 0, 44);
-
+    font-size: 100px;
+    color: rgb(7, 118, 214);
 }
-#h1_cad_user{
-    color: azure;
-    margin-bottom: 30px;
-    font-family: Arial, Helvetica, sans-serif;
 
-}
 body{
-    background-color: rgb(97, 17, 172);
+    background-color:blueviolet;
 }
 
 .form-label{
-     color: azure;
-     font-size: 20px;
-
+    color: rgb(0, 0, 0);
+    font-size: 30px;
 }
 
 .btn{
-    width: 40%;
-    font-family: Arial, Helvetica, sans-serif;
-    border-bottom-color: rgb(228, 233, 233);
-    color: aliceblue;
-}
-button{
-    text-align:center;
-    margin-top: 10px;
-    color: blue;
+    width: 30%;
+} 
+.img_cad {
+    margin-top: 80px;
 }
 
-.img_cad{
-    margin-top: 220px;
-width: 20px;
+.button {
+    text-align: center;
+    margin-top: 30px;
 }
