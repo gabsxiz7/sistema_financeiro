@@ -16,13 +16,13 @@ body{
 }
 
 h1{
-    font-size: 18px;
     margin-top: 08%;
 }
 
 .btn{
     width: 40%;
     margin-top: 3%;
+    
 }
 
 .btn-primary{
@@ -32,3 +32,4 @@ h1{
 .Img_cad.svg{
     margin-top: 249px;
 }
+
