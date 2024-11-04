@@ -26,6 +26,16 @@
 }
     </style>
 <body>
+    <div style="">
+        <?php
+            if (isset($_SESSION['id'])) {
+                $id = $_SESSION['id'];
+                echo "Olá $id";
+                } else{
+                 echo "<script>alert('Usuário precisar logar'); history.back();</script>";
+                }
+        ?>
+    </div>
     <h1>Bem-vindo ao Sistema!</h1>
     <p>Escollha uma das opções abaixo:</p>
 
