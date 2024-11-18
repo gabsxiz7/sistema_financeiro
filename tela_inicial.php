@@ -26,11 +26,16 @@
 }
     </style>
 <body>
-    <div style="">
+    <div style=""><a href="index.html"><button class="button">sair</button></a>
         <?php
-            if (isset($_SESSION['id'])) {
+        session_start();
+        include 'php/conexao.php';
+        if (isset($_SESSION['id'])) {
                 $id = $_SESSION['id'];
-                echo "Olá $id";
+                $sql = "SELECT * FROM tb_user WHERE id_usuario = $id";
+                $query = $conexao->query($sql);
+                $resultado = $query->fetch_assoc();
+                echo $resultado['nome'];
                 } else{
                  echo "<script>alert('Usuário precisar logar'); history.back();</script>";
                 }
@@ -39,8 +44,8 @@
     <h1>Bem-vindo ao Sistema!</h1>
     <p>Escollha uma das opções abaixo:</p>
 
-    <a href="Categoria.html"><button class="button">Cadastro de categorias</button></a>
-    <a href="Lançamento.html"><button class="button">Lançamentos</button></a>
+    <a href="Categoria.php"><button class="button">Cadastro de categorias</button></a>
+    <a href="Lançamento.php"><button class="button">Lançamentos</button></a>
 
 </body>
 </html>
