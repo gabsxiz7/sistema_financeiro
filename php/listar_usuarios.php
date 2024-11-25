@@ -31,7 +31,7 @@
         <tbody>
           <?php
           //iniciar sessão e incluir conexão session_start();
-          include 'php/conexao.php';
+          include 'conexao.php';
 
           //verificar se usuário está logado 
           if (!isset($_SESSIO['id'])) {

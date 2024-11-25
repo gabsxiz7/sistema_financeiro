@@ -11,18 +11,16 @@ $email = $_POST ['email'];
 $cargo = $_POST ['cargo'];
 $senha = $_POST ['senha'];
 
-$sql = "INSERT INTO tb_user (nome, email, cargo, senha) VALUES ('$snome', '$email', '$email', '$cargo', '$senha')";
+$sql = "INSERT INTO tb_user (nome, email, cargo, senha) VALUES ('$nome','$email', '$cargo', '$senha')";
 
 // Executar o Insert no Banco de Dados
 
-$conexao -> query($sql);
-
-if ($conexao -> query($sql)){
+if ($conexao -> query($sql) === TRUE) {
     echo "<script> alert('✔ Usuário inserido com Sucesso!'); window.location.href='tela_inicial.php';</script>";
 } else {
-    echo "Erro ao inserir usuário: " . $conexão->error;
+    echo "Erro ao inserir usuário: " . $conexao->error;
 }
 
 //Fechar a conexão
-$conexão->close();
+$conexao->close();
 ?>

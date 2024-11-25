@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+ session_start();
+ ?> 
+ <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
@@ -13,8 +16,7 @@
     <div class="container text-center">
     <div style="color: white">
         <?php
-        session_start();
-        include 'php/conexao.php';
+        include 'conexao.php';
         if (isset($_SESSION['id'])) {
                 $id = $_SESSION['id'];
                 $sql = "SELECT * FROM tb_user WHERE id_usuario = $id";
@@ -25,7 +27,7 @@
                  echo "<script>alert('Usuário precisar logar'); history.back();</script>";
                 }
         ?>
-        <a class="btn btn-danger" href="logout.php" role="button">Sair</a>
+        <a class="btn btn-danger" href="php/logout.php" role="button">Sair</a>
 
     </div>
         <div class="row">
@@ -51,7 +53,7 @@
                   <input type="int" class="form-control" id="Categoria" aria-describedby="emailHelp">
                   <div id="emailHelp" class="form-text"></div>
                 </div>
-                <a href="Lançamento.html" type="submit" class="btn btn-primary">Continuar</a>
+                <a href="Lancamento.html" type="submit" class="btn btn-primary">Continuar</a>
               </form>
           </div>
           <div class="col-sm-12 col-md-4">
