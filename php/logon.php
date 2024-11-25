@@ -6,7 +6,7 @@ $email = $_POST['email'];
 $password = $_POST['senha'];
 
 //link da conexão
-include 'conexao.php';
+include_once __DIR__ . '/conexao.php';
 
 
 //Pegar os dados do banco

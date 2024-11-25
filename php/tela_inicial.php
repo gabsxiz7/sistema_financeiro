@@ -1,7 +1,6 @@
 <?php
 session_start();
-var_dump($_SESSION);
-include 'conexao.php';
+include_once __DIR__ . '/conexao.php';
 ?>
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -41,7 +40,7 @@ include 'conexao.php';
                 $query = $conexao->query($sql);
                 if ($query->num_rows > 0) {
                     $resultado = $query->fetch_assoc();
-                    echo "<p>Bem-vindo, Gabriella" . htmlspecialchars ($resultado['nome']) . "!</p>";
+                    echo "<p>Bem-vindo, " . htmlspecialchars($resultado['nome']) . "!</p>";
                  } else{
                     echo "<script>alert('Usuário não encontrado.'); history.back();</script>";
             } 
@@ -55,8 +54,8 @@ include 'conexao.php';
     <h1>Bem-vindo ao Sistema!</h1>
     <p>Escollha uma das opções abaixo:</p>
 
-    <a href="Categoria.php"><button class="button">Cadastro de categorias</button></a>
-    <a href="Lancamento.php"><button class="button">Lançamentos</button></a>
+    <a href="php/Categoria.php"><button class="button">Cadastro de categorias</button></a>
+    <a href="php/Lancamento.php"><button class="button">Lançamentos</button></a>
     <a href="php/logout.php"><button>Sair</button></a>
 
 </body>

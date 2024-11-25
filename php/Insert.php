@@ -2,7 +2,7 @@
 
 //Conectando no Banco de Dados
 
-include 'conexao.php';
+include_once __DIR__ . '/conexao.php';
 
 //Receber os Dados do Formulário
 

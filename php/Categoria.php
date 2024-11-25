@@ -16,7 +16,8 @@
     <div class="container text-center">
     <div style="color: white">
         <?php
-        include 'conexao.php';
+      include_once __DIR__ . '/conexao.php';
+        
         if (isset($_SESSION['id'])) {
                 $id = $_SESSION['id'];
                 $sql = "SELECT * FROM tb_user WHERE id_usuario = $id";
